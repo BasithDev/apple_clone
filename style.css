@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'san fransisco';
+    src: url('./fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+/* styling root  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'san fransisco';
+}
+/* styling for navigation links in navbar */
+.navi{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0;
+    background-color: #f5f5f7f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* styling for image and hyperlink in "navi" class */
+.navi > a,img{
+    margin: 0 1.25rem;
+}
+.navi > a{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+}
+.navi > a:hover{
+    color: rgb(33, 33, 33);
+}
+/* styling for "promo" class which only contains a text  */
+.promo{
+    background-color: white;
+    text-align: center;
+    padding: 22px 0 6px 0;
+    font-size: 13px;
+    margin-top: 25px;
+}
+/* styling for p tag inside "promo" class */
+.promo > p > span{
+    color: rgb(13, 131, 194);
+    font-weight: 500;
+    cursor: pointer;
+}
+.promo > p > span:hover{
+    text-decoration: underline;
+}
+/* styling for div with classname "content-1" */
+.content-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f7;
+    margin: 10px 0;
+}
+/* styling for button inside "content-1" div */
+.content-1 > button{
+    margin: 6px;
+    padding: 8px 20px;
+    color: rgb(0, 140, 255);
+    border: 1px solid rgb(0, 140, 255);
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.content-1>button:hover{
+    color: white;
+    background-color: rgb(0, 140, 255);
+}
+/* styling for div with classname "content-2" */
+.content-2{
+    position: relative;
+}
+/* styling for image inside "content-2" div */
+.content-2 > img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+/* styling for div with classname "action" inside "content-1" div */
+.content-2 > .action{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+/* styling for button inside div with classname "action" inside "content-1" div */
+.content-2 > .action > button{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin: 16px;
+    cursor: pointer;
+}
+.content-2 > .action > button:hover{
+    background-color: rgb(25, 151, 254);
+}
+/* styling for div with classname "content-3" */
+.content-3{
+    position: relative;
+    background-color: #f5f5f7;
+    margin: 8px 0;
+}
+/* styling for image inside div with classname "content-3" */
+.content-3 > img{
+    margin: 0;
+    width: 80%;
+    height: auto;
+    position: relative;
+    left: 10%;
+}
+/* styling for div with classname "action" inside div with classname "content-3" */
+.content-3 > .action{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* styling for buttons inside "action" div */
+.content-3 > .action > button{
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
+}
+.content-3 > .action > .btn1{
+    background-color: rgb(0, 140, 255);
+}
+.content-3 > .action > .btn1:hover{
+    background-color: rgb(25, 151, 254);
+}
+.content-3 > .action > .btn2{
+    background-color: transparent;
+    border: 1px solid rgb(0, 140, 255);
+    color: rgb(0, 140, 255);
+}
+.content-3 > .action > .btn2:hover{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+/* styling for div with classname "promo-gallery" */
+.promo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* styling for div with classname "promo-img" */
+.promo-img{
+    width: 50%;
+    z-index: 0;
+}
+/* styling for image inside div with classname "promo-img" */
+.promo-img img{
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+}
+/* styling for div with classname "promo-action" */
+.promo-action{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/* styling for h1,p,button inside div with classname "promo-action" */
+.promo-action h1{
+    font-size: 34px;
+    font-weight: 600;
+}
+.promo-action p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.promo-action button{
+    margin: 0 5px;
+    padding: 6px 16px;
+    border-radius: 15px; 
+    cursor: pointer;   
+}
+/* styling for learn more button */
+.lm-btn{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+}
+.lm-btn-blk{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.lm-btn-blk:hover{
+    background-color: black;
+}
+.lm-btn:hover{
+    background-color: rgb(9, 158, 238);
+}
+/* styling for buy button */
+.buy-btn{
+    background-color: transparent;
+    border: 1px solid rgb(0, 140, 255);
+    color: rgb(0, 140, 255);
+}
+.buy-btn-blk{
+    border: 1px solid black;
+    background-color: transparent;
+}
+.buy-btn-blk:hover{
+    background-color: black;
+    color: white;
+}
+.buy-btn:hover{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+/* styling for image inside "apple-tv-promo" div */
+.apple-tv-promo img{
+    margin: 0 8px;
+    width: 98.95%;
+}
+/* styling footer */
+footer{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 1px;
+    background-color: #f5f5f7;
+    color: gray;   
+}
+/* styling hyperlink inside pre tag inside footer */
+footer > pre > a{
+    color: gray;
+}
+/* styling div "footer-nav-links" */
+.footer-nav-links{
+    display: flex;
+}
+/* styling lists inside div "footer-nav-links" */
+.footer-nav-links > .col > ul > li{
+    list-style: none;
+    margin-top: 8px;
+}
+/* styling hyperlinks inside that list */
+.footer-nav-links > .col > ul > li > a{
+    color: gray;
+    text-decoration: none;
+}
+.footer-nav-links > .col > ul > li > a:hover{
+    text-decoration: underline;
+}
+/* styling div "col" */
+.col{
+    width: 20%  ;
+}
+/* styling p tag inside div "col" */
+.col > p{
+    margin: 10px 0;
+}
+/* styling hr tag */
+hr{
+    margin: 12px 0;
+}
+/* styling hyperlink inside div "contact-sec" */
+.contact-sec a{
+    color: rgb(44, 143, 243);
+}
+/* styling a div "copyright-sec" */
+.copyright-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+/* styling a div "nav-links" inside div "copyright-sec" */
+.copyright-sec > .nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+/* styling a hyperlink inside p tag inside "nav-links" */
+.copyright-sec > .nav-links > p > a{
+    color: gray;
+    margin: 0px 3px;
+    text-decoration: none;
+}
+.copyright-sec > .nav-links > p > a:hover{
+    text-decoration: underline;
+}
+/* styling the first child inside a nav-links */
+.copyright-sec > .nav-links> :first-child{
+    margin-right: 30px;
+}
